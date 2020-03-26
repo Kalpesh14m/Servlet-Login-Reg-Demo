@@ -1,0 +1,25 @@
+# Create Database
+CREATE DATABASE mydemo;
+
+#select Database
+USE mydemo;
+
+#Create Table
+CREATE TABLE user(
+	user_name VARCHAR(200) NOT NULL UNIQUE,
+	 email VARCHAR(200) NOT NULL UNIQUE,
+	 mobile BIGINT(10) NOT NULL UNIQUE,
+	 role VARCHAR(200),
+	 password VARCHAR(200) NOT NULL
+	 );
+	 
+#Show Tables
+SHOW TABLES;
+
+#Describe tables
+desc  user;
+
+#select all record in user Table
+SELECT * FROM user;
+
+
